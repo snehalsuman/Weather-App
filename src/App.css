@@ -1,4 +1,4 @@
-
+/* Center and constrain the main container */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,6 +6,7 @@
   text-align: center;
 }
 
+/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -19,6 +20,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Logo animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -34,10 +36,143 @@
   }
 }
 
-.card {
-  padding: 2em;
+/* Card-style search container */
+.search-container {
+  background-color: #1e1e2e; /* Dark card background */
+  padding: 20px;
+  border-radius: 16px; /* Smooth rounded edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 800px;
+  margin: 16px auto;
 }
 
-.read-the-docs {
-  color: #888;
+/* Search input */
+.search-input {
+  flex-grow: 1;
+  padding: 14px 18px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Search Button */
+button {
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  white-space: nowrap;
+  background: linear-gradient(45deg, #646cff, #4f46e5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 8px;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #4f46e5, #3730a3);
+}
+
+/* Light mode toggle button spacing */
+.theme-toggle {
+  margin-bottom: 24px; /* Adjust the spacing */
+}
+/* General App Styling */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #131826;
+  color: white;
+}
+
+/* Title Styling */
+.weather-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Weather Section */
+.weather-section {
+  width: 100%;
+  max-width: 600px;
+  background: #1b2138;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Recent Searches */
+.recent-searches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-chip {
+  background: #4f46e5;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-chip:hover {
+  background: #3730a3;
+}
+
+/* Weather Card */
+.weather-card {
+  padding: 20px;
+  background: #1e1e2e;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.city-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #a0aec0;
+}
+
+.extra-info {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 1rem;
 }

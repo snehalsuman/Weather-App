@@ -1,3 +1,4 @@
+/* 🌟 Root Variables for Theme */
 :root {
   --background-light: #ffffff;
   --background-dark: #242424;
@@ -5,7 +6,7 @@
   --text-dark: rgba(255, 255, 255, 0.9);
 }
 
-/* Default Light Theme */
+/* 🌙 Light & Dark Mode */
 body {
   margin: 0;
   padding: 0;
@@ -16,28 +17,28 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark Mode */
 body.dark {
   background-color: var(--background-dark);
   color: var(--text-dark);
 }
 
-/* Buttons */
+/* 🔘 Buttons */
 button {
   padding: 10px 16px;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 8px;
-  border: none;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  background: linear-gradient(45deg, #646cff, #4f46e5);
+  color: white;
+  border: none;
 }
 
 button:hover {
-  border-color: #646cff;
+  background: linear-gradient(45deg, #4f46e5, #3730a3);
 }
 
-/* Dark Mode Button */
 body.dark button {
   background-color: #333;
   color: white;
@@ -45,4 +46,140 @@ body.dark button {
 
 body.dark button:hover {
   background-color: #444;
+}
+
+/* 🎯 Main Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ✨ Weather App Title */
+.weather-title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 🌤️ Weather Container */
+.weather-container {
+  background: #131826;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌡️ Current Weather Card */
+.current-weather {
+  background: #1B2138;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.weather-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.weather-header p {
+  color: #A0AEC0;
+  font-size: 0.9rem;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-info h1 {
+  font-size: 2.5rem;
+}
+
+/* 🌦️ Forecast Section */
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.forecast-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* 📅 Forecast Cards */
+.forecast-card {
+  background: #1B2138;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.day {
+  font-weight: bold;
+}
+
+.temp {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #A0AEC0;
+}
+
+/* 🔎 Search Bar */
+.search-container {
+  background-color: #1e1e2e;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 800px;
+  margin: 16px auto;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 14px 18px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+/* 🔦 Theme Toggle */
+.theme-toggle {
+  margin-bottom: 24px;
 }

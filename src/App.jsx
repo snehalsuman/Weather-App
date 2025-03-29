@@ -33,15 +33,15 @@ const App = () => {
   return (
     <div className="flex flex-col items-center p-6 min-h-screen w-full transition-colors">
       <div className="flex justify-between items-center w-full max-w-md">
-        <h1 className="text-3xl font-bold">Weather Dashboard</h1>
+        <h1 className="weather-title">Weather Dashboard</h1>
 
-        {/* Dark Mode Toggle Button */}
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="p-2 rounded-full transition bg-gray-300 dark:bg-gray-700 dark:text-white"
-        >
-          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
-        </button>
+        {/* Light Mode Toggle Button */}
+  <button
+  onClick={() => setDarkMode(!darkMode)}
+  className="theme-toggle p-2 rounded-full transition bg-gray-300 dark:bg-gray-700 dark:text-white"
+  >
+  {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+  </button>
       </div>
 
       <SearchBar onSearch={handleSearch} />
